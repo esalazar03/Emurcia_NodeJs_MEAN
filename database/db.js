@@ -3,7 +3,8 @@ const db = {};
 const sequelize = new Sequelize("emurcia", "root", "", {
   host: "localhost",
   dialect: "mysql",
-  operatorsAliases: false,
+  // se cambio de false a 1 por un warning
+  operatorsAliases: 1,
 
   pool: {
     max: 5, //numero maximo de conexiones
