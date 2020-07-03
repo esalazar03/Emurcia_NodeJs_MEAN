@@ -53,7 +53,7 @@ users.post('/register', (req, res) => {
 users.post('/login', (req, res) => {
     User.findOne({
             where: {
-                email: req.body.email,
+                usuario: req.body.usuario,
                 password: req.body.password
             }
         })
