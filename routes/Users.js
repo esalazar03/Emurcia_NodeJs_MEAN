@@ -70,7 +70,9 @@ users.post('/login', (req, res) => {
         .catch(err => {
             res.send('error: ' + err)
         })
-})
+});
+
+
 
 users.get('/profile', (req, res) => {
     var decoded = jwt.verify(req.headers['authorization'], process.env.SECRET_KEY)
