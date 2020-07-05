@@ -13,8 +13,8 @@ const sequelize = new Sequelize("emurcia", "root", "", {
     idle: 10000,
   },
 });
-
-db.sequelize = sequelize;
 db.Sequelize = Sequelize;
+db.sequelize = sequelize;
+
 
 module.exports = db;
